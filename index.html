@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Running Calculator
+    </title>
+  </head>
+
+  <body> 
+    <main class="main">
+      <header>
+        <h1>Running Calculator</h1>
+      </header>
+      <div class="SolveFor">
+        <h2>Solve For:</h2>
+        <form>
+          <label class='Radio'>
+            <input id='SolveTime' type="radio" name="SolveFor" >Time</input>
+          </label>
+  
+          <label class='Radio'>
+            <input id='SolveDistance' type="radio" name="SolveFor" >Distance</input>
+          </label>
+          
+          <label class='Radio'>
+            <input id='SolvePace' type="radio" name="SolveFor" >Pace</input>
+          </label>
+
+          <input id='SolveButton' value='Solve' type='button'></input>
+        </form>
+        
+      </div>
+      <div class="TimeInput">
+        <h2>Time:</h2>
+          <input type="text" placeholder="Hours" id="HoursTime" class='TextBox'></input>
+          <input type="text" placeholder="Minutes" id="MinutesTime" class='TextBox'></input>
+          <input type="text" placeholder="Seconds" id="SecondsTime" class='TextBox'></input>
+      </div>
+
+      <div class="Distance">
+        <h2>Distance:</h2>
+        <form>
+          <input type="text" placeholder="Distance" id="DistanceText" class='TextBox'></input>
+            <br/>
+
+            <label class='Radio'>
+              <input id='kmDistance' type="radio" name="DistanceRadio" checked>Kilometers</input>
+            </label>
+
+            <label class='Radio'>
+              <input id='miDistance' type="radio" name="DistanceRadio">Miles</input>
+            </label>
+
+            <label class='Radio'>
+              <input id='mDistance' type="radio" name="DistanceRadio">Meters</input>
+            </label>
+        </form>
+      </div>
+
+      <div class="Pace">
+        <h2>Pace:</h2>
+
+        <form>
+          <input type="text" id="HoursPace" placeholder="Hours" class='TextBox'></input>
+          <input type="text" id="MinutesPace" placeholder="Minutes" class='TextBox'></input>
+          <input type="text" id="SecondsPace" placeholder="Seconds" class='TextBox'></input>
+          <br/>
+
+          <label class='Radio'>
+            <input id='kmPaceRadio' type="radio" name="Pace" checked>Per Kilometer</input>
+          </label>
+
+          <label class='Radio'>
+            <input id='miPaceRadio' type="radio" name="Pace">Per Mile</input>
+          </label>
+
+          <label class='Radio'>
+            <input id='CustomPaceRadio' type="radio"  name="Pace"></input>Per 
+            <input id='CustomPaceText' type="text" class='PaceTextBox'> </input>
+            <select id='CustomPaceSelect'> 
+              <option value="Kilometers">km</option>
+              <option value="Miles">mi</option>
+              <option value="Meters">m</option>
+            </select>
+          </label>
+          </label>
+        </form>
+
+      </div>
+
+    </main>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+  </body>
+</html>
