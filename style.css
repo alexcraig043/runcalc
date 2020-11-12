@@ -1,0 +1,61 @@
+body {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Oswald';
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+h2 {
+    font-size: 3vh;
+}
+
+button {
+    border-radius: 10px;
+}
+
+select {
+    border-radius: 6px;
+}
+
+#solveButton {
+    border-radius: 6px;
+}
+
+.radio {
+    display: inline;
+    position: relative;
+    padding-left: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    font-size: 2vh;
+
+}
+
+.radio:hover input {
+    background-color: #ccc;
+}
+
+.textBox {
+    display: inline;
+    border-radius: 12px;
+    
+    font-size: 1.5vh;
+    padding: 10px 15px;
+    
+}
+
+.customTextBox {
+    border-radius: 6px;
+}

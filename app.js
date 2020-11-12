@@ -6,7 +6,7 @@ function setup () {
     const SolveTime = document.getElementById('SolveTime')
     const SolveDistance = document.getElementById('SolveDistance')
     const SolvePace = document.getElementById('SolvePace')
-    const SolveButton = document.getElementById('SolveButton')
+    const SolveButton = document.getElementById('solveButton')
 
     //Time:
     let HoursTime = document.getElementById('HoursTime')
